@@ -13,6 +13,6 @@ struct User {
     let person: Person
     
     static func getUser() -> User {
-        return User(userName: "User", password: "123", person: Person.getPerson())
+        return User(userName: "Aleksey", password: "123", person: Person.getPerson())
     }
 }

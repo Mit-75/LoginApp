@@ -68,7 +68,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hjZ-WO-cAX" secondAttribute="trailing" constant="30" id="OgD-Ua-otE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hjZ-WO-cAX" secondAttribute="bottom" multiplier="5:3" id="QBG-jY-gVB"/>
@@ -129,7 +129,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dwV-9y-ARA"/>
-                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
                             <constraint firstItem="fxD-Ob-w8u" firstAttribute="top" secondItem="dwV-9y-ARA" secondAttribute="top" constant="160" id="51d-Ty-huJ"/>
                             <constraint firstItem="4uh-KP-7zb" firstAttribute="centerX" secondItem="1O2-lj-t0b" secondAttribute="centerX" id="FZ5-eu-cCy"/>
@@ -228,6 +228,14 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="ageLabel" destination="KOo-Kl-sss" id="fhF-e5-YzK"/>
+                        <outlet property="companyLabel" destination="A7D-Wq-3KA" id="LNe-mp-351"/>
+                        <outlet property="hobbiesLabel" destination="7YG-PO-Nm4" id="veS-y5-9gZ"/>
+                        <outlet property="jobTitleLabel" destination="Qyi-8b-x3D" id="amQ-IL-lBD"/>
+                        <outlet property="nameLabel" destination="aFm-aa-wtL" id="OpG-ln-JAh"/>
+                        <outlet property="surnameLabel" destination="RrQ-lV-aw4" id="zEV-oc-xme"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xUv-FA-QJ6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -257,6 +265,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Dmitry Bio" id="Mkm-Wg-COk"/>
+                    <connections>
+                        <outlet property="bioLabel" destination="jsx-wP-e4d" id="a5Q-so-Rkp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RUv-GG-lRs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -310,8 +321,8 @@
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="secondarySystemGroupedBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

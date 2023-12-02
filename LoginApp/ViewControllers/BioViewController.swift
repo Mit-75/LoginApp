@@ -9,13 +9,15 @@ import UIKit
 
 final class BioViewController: UIViewController {
     
-    var userFromBioVC: User?
-
+    var user: User?
+    
+    @IBOutlet var bioLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Bio \(userFromBioVC)")
-
         
+        if let userFromBioVC = user {
+            bioLabel.text = userFromBioVC.person.bio
+        }
     }
-
 }
