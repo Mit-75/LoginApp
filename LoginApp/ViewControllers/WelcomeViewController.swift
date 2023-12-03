@@ -19,9 +19,9 @@ final class WelcomeViewController: UIViewController {
         welcomeLabel.text = ""
         myNameLabel.text = ""
         
-        if let userFromWelcomeVC = user {
-            welcomeLabel.text = "Welcome, \(userFromWelcomeVC.userName)!"
-            myNameLabel.text = "My name is \(userFromWelcomeVC.person.name)."
+        if let notOptionalUser = user {
+            welcomeLabel.text = "Welcome, \(notOptionalUser.userName)!"
+            myNameLabel.text = "My name is \(notOptionalUser.person.name)."
         }
     }
 }

@@ -20,13 +20,13 @@ final class NameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let userFromNameVC = user {
-            ageLabel.text = "Возраст: \(userFromNameVC.person.age)"
-            nameLabel.text = "Имя: \(userFromNameVC.person.name)"
-            surnameLabel.text = "Фамилия: \(userFromNameVC.person.surname)"
-            companyLabel.text = "Компания: \(userFromNameVC.person.company)"
-            jobTitleLabel.text = "Должность: \(userFromNameVC.person.jobTitle)"
-            hobbiesLabel.text = "Увлечения: \(userFromNameVC.person.hobbies)"
+        if let notOptionalUser = user {
+            ageLabel.text = "Возраст: \(notOptionalUser.person.age)"
+            nameLabel.text = "Имя: \(notOptionalUser.person.name)"
+            surnameLabel.text = "Фамилия: \(notOptionalUser.person.surname)"
+            companyLabel.text = "Компания: \(notOptionalUser.person.company)"
+            jobTitleLabel.text = "Должность: \(notOptionalUser.person.jobTitle)"
+            hobbiesLabel.text = "Увлечения: \(notOptionalUser.person.hobbies)"
         }
     }
 

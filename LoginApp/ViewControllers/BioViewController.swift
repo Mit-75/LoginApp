@@ -16,8 +16,8 @@ final class BioViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let userFromBioVC = user {
-            bioLabel.text = userFromBioVC.person.bio
+        if let notOptionalUser = user {
+            bioLabel.text = notOptionalUser.person.bio
         }
     }
 }
